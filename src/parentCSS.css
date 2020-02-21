@@ -1,0 +1,88 @@
+.header {
+  margin: 2em auto 0em auto;
+  height: 8em; /* 800px x 160px */
+  width: 50em;
+}
+
+.navBar {
+  margin: 0em auto;
+  height: 5em; /* 640px x 80px */
+  width: 40em;
+  text-align: center;
+}
+
+
+.navlink {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+#game-container {
+  height: 31em;
+  width: 61em;
+  margin: 0em auto;
+}
+
+.game-column {
+  height: 30em; /* 240px x 480px */
+  width: 15em;
+  float: left;
+}
+
+.test-container {
+  height: 30em;  /* 16px * 30 = 460px */
+  width: 30em;
+  border: solid blue .5em;
+  background-color: black;
+  background-color: pink;
+  float: left;
+}
+
+.no-vertical-margin {
+  margin: 0em auto;
+}
+
+.game-screen {
+  position: relative;
+  margin: 0 auto;
+  height: 30em;  /* 16px * 30 = 460px */
+  width: 30em;
+  border: solid blue .5em;
+  background-color: black;
+  float: left;
+}
+
+.non-game-screen {
+    position: relative;
+    margin: 0 auto;
+    height: 30em;  /* 16px * 30 = 460px */
+    width: 30em;
+    border: solid blue .5em;
+    background-color: black;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.cat-menu-image {
+  display: block;
+  margin: 5em auto;
+}
+
+.text-container {
+  color: white;
+  width: 40em;
+  margin: 0 auto;
+  border: 1em white;
+}
+
+p.basic-text {
+  font-size: 30px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+a.external-link {
+  color: blue;
+}
