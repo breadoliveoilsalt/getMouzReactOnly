@@ -10,7 +10,7 @@ import topScoresImage from '../images/topScores.png'
 class GameWindowsContainer extends Component {
 
   componentDidMount() {
-    if (this.props.topScores.length < 5){
+    if (this.props.topScores.length < 5) {
       this.props.getTopScores()
     }
   }
@@ -20,24 +20,24 @@ class GameWindowsContainer extends Component {
     let topScoresList = null
 
     if (this.props.topScores.length > 0) {
-      topScoresList = this.props.topScores.map( (score) => {
+      topScoresList = this.props.topScores.map((score) => {
         return (
           <p className={"text-centered"} >
-            <span style={{color: 'white', fontSize: '1.5em', marginTop: '0.5em'}}> {score} </span>
+            <span style={{ color: 'white', fontSize: '1.5em', marginTop: '0.5em' }}> {score} </span>
           </p>
-          )
+        )
       })
     }
 
-    return(
+    return (
       <div id="game-container">
         <div className={"game-column"}>
-          <img src={yourScoreImage} style={{display: 'block'}} />
+          <img src={yourScoreImage} style={{ display: 'block' }} />
           <p className={"text-centered"} >
-            <span style={{color: 'white', fontSize: '3em'}}> {this.props.score} </span>
+            <span style={{ color: 'white', fontSize: '3em' }}> {this.props.score} </span>
           </p>
-          <img src={topScoresImage} style={{display: 'block'}} />
-            {topScoresList}
+          <img src={topScoresImage} style={{ display: 'block' }} />
+          {topScoresList}
 
         </div>
 
@@ -63,7 +63,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    getTopScores: () => dispatch(getTopScores())
+    // getTopScores: () => dispatch(getTopScores())
+    getTopScores: () => { }
   }
 }
 
